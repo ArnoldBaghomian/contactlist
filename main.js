@@ -117,7 +117,7 @@ function deleteTask(){
 
 }
 
-
+//sort
 function sortFirst() {
 	debugger;
 	g_tableArray.sort( function (le1, le2) {
