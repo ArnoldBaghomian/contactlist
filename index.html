@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contactlist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     
+    
+</head>
+
+
+<body>
+<div class ="container">
+
+<h1>Contact List</h1>
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" class="editable" for="FirNam">FirstName</label>
+    <input type="text" class="form-control" id="fName" placeholder="FirstName">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="LasNam">LastName</label>
+    <input type="text" class="form-control" id="lName" placeholder="LastName">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="pnumber">LastName</label>
+    <input type="number" class="form-control" id="pNum" placeholder="PhoneNumber" required>
+  </div>
+
+  <div class="checkbox">
+   
+  </div>
+  <button type="submit" class="btn btn-default add">Save information</button>
+
+          
+</form>
+
+<div class="row tableField right">
+        <table class="table table-striped">
+            <thead>
+          
+            <h1>A Listers Only</h1>
+                <tr>
+                    <td >
+                     <button type="button" id = "first" class="btn btn-default sortFirst">First Name</button>  
+                    </td>
+                    <td>
+                    <button type="button" id = "last" class="btn btn-default sortLast">Last Name</button>
+                    </td>
+                    <td> <button type="button" id = "phone" class="btn btn-default sortNum">Phone #</button></td>
+                    <td>Edit</td> 
+                    <td>Remove</td>
+                </tr>
+            </thead>
+              <tr id="template">
+                <td class="FirstName">Eddy</td>
+                <td class="LastName">Tornado</td>
+                <td class="PhoneNumber">123-456</td>
+                <td class="editTd">
+                <button type="button" class="btn btn-default editButton">Edit</button>  
+                </td>
+                <td class="removeTd">
+                <button type="button" class="btn btn-default removeButton">Remove</button>  
+                </td>
+            </tr>
+              <tbody id = "list1">
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src = "main.js"></script>
+
+</div>
+</body>
+</html>
+
+
+
+
+
